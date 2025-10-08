@@ -1,4 +1,4 @@
-### BookingService — Setup Guide
+### Setup Guide
 
 Follow these steps to run the project locally.
 
