@@ -17,10 +17,15 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/db_name"
 npm i
 ```
 
-### 3) Generate Prisma Client
+### 3) Generate Prisma Client and push db
 ```bash
-npx prisma generate
+npx prisma generate --schema='./src/prisma/schema.prisma'
+npx prisma db push --schema='./src/prisma/schema.prisma'
 ```
+For migrations 
+``` npx prisma migrate dev --name init --schema='./src/prisma/schema.prisma'```
+
+
 
 ### 4) Start the dev server
 ```bash

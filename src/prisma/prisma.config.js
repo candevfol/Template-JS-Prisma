@@ -1,3 +1,3 @@
-import { PrismaClient } from './generated/prisma'
+import { PrismaClient } from './generated'
 
 const prisma = new PrismaClient()
