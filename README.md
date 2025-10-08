@@ -19,11 +19,13 @@ npm i
 
 ### 3) Generate Prisma Client and push db
 ```bash
+# Generate Prisma Client from the schema
 npx prisma generate --schema='./src/prisma/schema.prisma'
-npx prisma db push --schema='./src/prisma/schema.prisma'
+
+# Run initial migration and apply it to the database
+npx prisma migrate dev --name init --schema='./src/prisma/schema.prisma'
+
 ```
-For migrations 
-``` npx prisma migrate dev --name init --schema='./src/prisma/schema.prisma'```
 
 
 
